@@ -1,0 +1,57 @@
+/* Mobile Bottom Nav (Optimized for 5 items) */
+.mobile-nav {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background: #ffffff;
+	display: flex;
+	justify-content: space-around; /* Items ke beech barabar jagah */
+	align-items: center;
+	padding: 8px 0; /* Padding thoda kam kiya taaki fit ho jaye */
+	box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+}
+
+.mobile-nav a {
+	text-decoration: none;
+	color: #888;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1; /* Har icon barabar jagah lega */
+	font-size: 0.75rem; /* Font thoda chhota kiya 5 items ke liye */
+	gap: 4px;
+}
+
+.mobile-nav a i {
+	font-size: 1.2rem; /* Icons ka size ekdum perfect */
+}
+
+.mobile-nav a.active {
+	color: var(--teal);
+	font-weight: bold;
+}
+
+/* Desktop Fix */
+@media (min-width: 768px) {
+	.cat-grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+	header {
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 10px 10%;
+	}
+	.search-bar {
+		width: 400px;
+	}
+	.hero {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-evenly;
+		text-align: left;
+	}
+	.mobile-nav {
+		display: none;
+	} /* Hide on PC */
+}

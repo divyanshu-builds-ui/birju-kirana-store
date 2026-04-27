@@ -1,0 +1,112 @@
+/* Best Sellers Section */
+.products {
+    padding: 20px 15px;
+    background: #fdfdfd; /* Halka sa off-white background taaki white cards chamkein */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Mobile pe 2 columns best hain */
+    gap: 15px;
+}
+
+.product-card {
+    background: #ffffff;
+    /* Light Teal Border - Category style se match karta hua */
+    border: 1px solid rgba(0, 95, 95, 0.1); 
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Image Container */
+.product-img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: #f9f9f9;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Card ke andar bhi ek halka border image ke liye */
+    border: 1px solid #f0f0f0; 
+}
+
+.product-img img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+/* Product Details */
+.product-info h3 {
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 4px;
+    /* Text 1 line mein rahe */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-info p {
+    font-size: 0.75rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+/* Price and Button Row */
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--teal);
+}
+
+.add-btn {
+    background: var(--teal);
+    color: white;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+/* Hover Effects */
+.product-card:hover {
+    border-color: var(--teal);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 95, 95, 0.08);
+}
+
+.add-btn:active {
+    transform: scale(0.9);
+}
+
+/* Desktop View ke liye */
+@media (min-width: 768px) {
+	.product-grid {
+		grid-template-columns: repeat(4, 1fr);
+		gap: 20px;
+	}
+	.products {
+		padding: 40px 8%;
+	}
+}

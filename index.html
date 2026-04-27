@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Birju Kirana | Online Grocery</title>
+		<link rel="stylesheet" href="css/product.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="header-top">
+				<div class="user-section">
+					<div class="profile-ring">
+						<img src="png/img.jpg" alt="User" class="profile-img" />
+					</div>
+					<span class="welcome-text">Namaste, Divyanshu</span>
+				</div>
+
+				<div class="header-icons">
+					<i class="fa-regular fa-heart" onclick="showToast('Wishlist feature coming soon! ❤️')"></i>
+					<div class="cart-container">
+						<i class="fa-solid fa-bag-shopping" onclick="showToast('Cart feature coming soon! ❤️')"></i>
+						<span class="cart-count">0</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="search-wrapper">
+				<div class="search-bar">
+					<i class="fa fa-search"></i>
+					<input type="text" placeholder="Search Atta, Dal, Oil..." />
+					<i class="fa fa-microphone" onclick="showToast('Microphone feature coming soon! ❤️')"></i>
+					<i class="fa-solid fa-camera" onclick="showToast('Camera feature coming soon! ❤️')"></i>
+				</div>
+			</div>
+		</header>
+
+		<section class="banner-section">
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="banner-container main-bg">
+							<div class="banner-content">
+								<div class="banner-text">
+									<span class="badge">Special Offer</span>
+									<h1>
+										Suddh Desi <br /><span class="highlight"
+											>Rashan</span
+										>
+									</h1>
+									<p>Upto 20% OFF on Monthly Grocery</p>
+									<button class="banner-btn teal-text">
+										Shop Now
+									</button>
+								</div>
+								<div class="banner-img">
+									<img src="png/rashan.jpeg" alt="Rashan" />
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="banner-container mustard-bg">
+							<div class="banner-content">
+								<div class="banner-text">
+									<span class="badge dark-badge"
+										>Deal of the Day</span
+									>
+									<h1 class="dark-text">
+										Pure Desi <br /><span class="white-text"
+											>Ghee</span
+										>
+									</h1>
+									<p class="dark-text">
+										Organic & Fresh. Flat ₹50 OFF
+									</p>
+									<button class="banner-btn mustard-text">
+										Grab Now
+									</button>
+								</div>
+								<div class="banner-img">
+									<img
+										src="png/ghee-banner.jpeg"
+										alt="Ghee"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</section>
+
+		<section class="cat-section">
+			<div class="section-header">
+				<h3>Categories</h3>
+				<a href="#" class="view-all" onclick="showToast(' See All feature coming soon! ❤️')">See All</a>
+			</div>
+
+			<div class="cat-slider">
+				<div class="cat-card">
+					<div class="cat-icon" style="background: #fff8e1">
+						<img src="png/wheat.jpeg" alt="Wheat" />
+					</div>
+					<span>Atta & Dal</span>
+				</div>
+
+				<div class="cat-card">
+					<div class="cat-icon" style="background: #fff3e0">
+						<img src="png/Oil.jpeg" alt="Oil" />
+					</div>
+					<span>Tel & Ghee</span>
+				</div>
+
+				<div class="cat-card">
+					<div class="cat-icon" style="background: #ffebee">
+						<img src="png/spices.jpeg" alt="Spices" />
+					</div>
+					<span>Masale</span>
+				</div>
+
+				<div class="cat-card">
+					<div class="cat-icon" style="background: #f1f8e9">
+						<img src="png/rice.jpeg" alt="Rice" />
+					</div>
+					<span>Chawal</span>
+				</div>
+
+				<div class="cat-card">
+					<div class="cat-icon" style="background: #e0f2f1">
+						<img src="png/sugar.jpeg" alt="Sugar" />
+					</div>
+					<span>Cheeni & Chai</span>
+				</div>
+
+				<div class="cat-card">
+					<div class="cat-icon" style="background: #efebe9">
+						<img src="png/dry-fruits.jpeg" alt="Dry Fruits" />
+					</div>
+					<span>Dry Fruits</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="products">
+			<h2>Best Sellers</h2>
+			<div class="product-grid">
+				<div class="product-card">
+					<div class="product-img">
+						<img src="png/atta.jpeg" alt="Product" />
+					</div>
+					<div class="product-info">
+						<h3>Ashirvaad Atta</h3>
+						<p>5 KG</p>
+						<div class="price-row">
+							<span class="price">₹245</span>
+							<button class="add-btn">+</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<nav class="mobile-nav">
+			
+			<a href="#" onclick="showToast('Home feature coming soon! ❤️')">
+				<i class="fa fa-home"></i>
+				<span>Home</span>
+			</a>
+			<a href="#" onclick="showToast('Categories feature coming soon! ❤️')">
+				<i class="fa fa-th-large"></i><span>Categories</span>
+			</a>
+			<a href="#" onclick="showToast('My Orders feature coming soon! ❤️')">
+				<i class="fa-solid fa-bag-shopping"></i>
+				<span>My Orders</span>
+			</a>
+			<a href="#" onclick="showToast('Profile feature coming soon! ❤️')">
+				<i class="fa fa-user"></i><span>Profile</span>
+			</a>
+			<a href="#" onclick="showToast('Menu feature coming soon! ❤️')">
+				<i class="fa fa-bars"></i><span>Menu</span>
+			</a>
+		</nav>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="js/script.js"></script>
+		<div id="toast" class="toast">Feature coming soon! 🚀</div>
+	</body>
+</html>
