@@ -1,0 +1,62 @@
+.profile-body { background-color: #f1f4f6; margin: 0; font-family: sans-serif; }
+
+.page-header {
+    background: #fff; padding: 15px 20px; display: flex;
+    align-items: center; justify-content: space-between;
+    position: sticky; top: 0; z-index: 100;
+}
+
+.back-btn { border: none; background: none; font-size: 1.2rem; cursor: pointer; }
+
+/* User Card */
+.user-card {
+    background: linear-gradient(135deg, #008282, #005a5a);
+    padding: 30px 20px; color: white; display: flex;
+    align-items: center; gap: 20px; border-radius: 0 0 30px 30px;
+}
+
+.user-avatar-large {
+    width: 70px; height: 70px; background: rgba(255,255,255,0.2);
+    border-radius: 50%; display: flex; align-items: center;
+    justify-content: center; font-size: 1.8rem; font-weight: 800;
+}
+
+.membership-badge {
+    background: #ffd700; color: #333; font-size: 0.7rem;
+    padding: 2px 8px; border-radius: 10px; font-weight: 700;
+}
+
+/* Stats */
+.stats-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    background: white; margin: -20px 20px 20px; padding: 15px;
+    border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.stat-item { text-align: center; border-right: 1px solid #eee; }
+.stat-item:last-child { border-right: none; }
+.stat-item .count { display: block; font-weight: 800; font-size: 1.1rem; color: #008282; }
+.stat-item .label { font-size: 0.7rem; color: #666; }
+
+/* Menu */
+.menu-title { padding-left: 20px; margin: 20px 0 10px; color: #888; font-size: 0.8rem; text-transform: uppercase; }
+
+.menu-link {
+    background: white; display: flex; align-items: center;
+    padding: 15px 20px; text-decoration: none; color: inherit;
+    border-bottom: 1px solid #f9f9f9;
+}
+
+.menu-icon { width: 40px; color: #008282; font-size: 1.2rem; }
+.menu-text { flex: 1; }
+.menu-text span { display: block; font-weight: 600; font-size: 0.95rem; }
+.menu-text p { margin: 0; font-size: 0.75rem; color: #777; }
+.arrow { font-size: 0.8rem; color: #ccc; }
+
+.logout-btn {
+    width: calc(100% - 40px); margin: 30px 20px; padding: 15px;
+    border-radius: 12px; border: 1px solid #ff4d4d;
+    background: transparent; color: #ff4d4d; font-weight: 700;
+    cursor: pointer; transition: 0.3s;
+}
+.logout-btn:active { background: #ff4d4d; color: white; }

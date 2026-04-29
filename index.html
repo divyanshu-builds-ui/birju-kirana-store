@@ -44,42 +44,102 @@
 	<body>
 		<header class="main-header">
 			<div class="header-top">
-				<div class="user-section">
-					<div class="profile-ring">
-						<img src="png/img.jpg" alt="User" class="profile-img" />
+				<div class="delivery-info">
+					<div class="time-badge">
+						<i class="fa-solid fa-bolt"></i> Free Dilivery in 2
+						Hours
 					</div>
-					<span class="welcome-text">Namaste, Divyanshu</span>
+					<div class="location-picker">
+						<span class="loc-label">Selected Location - </span>
+						<span class="loc-address"
+							>Basavanagudi, Bangalore - 560004</span
+						>
+						<i class="fa fa-caret-down"></i>
+					</div>
 				</div>
-
-				<div class="header-icons">
-					<i
-						class="fa-regular fa-heart"
-						onclick="showToast('Wishlist feature coming soon! ❤️')"
-					></i>
-					<div class="cart-container">
-						<i
-							class="fa-solid fa-bag-shopping"
-							onclick="showToast('Cart feature coming soon! ❤️')"
-						></i>
-						<span class="cart-count">0</span>
-					</div>
+				<div class="profile-container">
+					<img
+						src="https://ui-avatars.com/api/?name=Divyanshu+Gupta&background=random"
+						alt="User"
+						class="user-avatar"
+					/>
 				</div>
 			</div>
 
-			<div class="search-wrapper">
-				<div class="search-bar">
-					<i class="fa fa-search"></i>
-					<input type="text" placeholder="Search Atta, Dal, Oil..." />
-					<i
-						class="fa fa-microphone"
-						onclick="
-							showToast('Microphone feature coming soon! ❤️')
-						"
-					></i>
-					<i
-						class="fa-solid fa-camera"
-						onclick="showToast('Camera feature coming soon! ❤️')"
-					></i>
+			<div class="search-section">
+				<div class="search-container">
+					<div class="search-bar">
+						<i class="fa fa-search search-icon"></i>
+						<input
+							type="text"
+							id="search-input"
+							placeholder="Search for 'Atta'"
+						/>
+						<i
+							class="fa fa-microphone mic-icon"
+							onclick="showToast('Listening... ❤️')"
+						></i>
+					</div>
+
+					<button
+						class="smart-list-btn"
+						onclick="openListModal()"
+						title="Upload Shopping List"
+					>
+						<i class="fa-solid fa-file-invoice"></i>
+					</button>
+				</div>
+			</div>
+
+			<div id="listModal" class="modal-container">
+				<div class="modal-overlay" onclick="closeListModal()"></div>
+
+				<div class="bottom-sheet">
+					<div class="handle"></div>
+					<div class="modal-body">
+						<div class="modal-header">
+							<h2>Shopping Lists</h2>
+							<p>
+								Everything on your list to your Basket in mins!
+							</p>
+						</div>
+
+						<div class="options-grid">
+							<div
+								class="opt-card"
+								onclick="showToast('Gallery opening...')"
+							>
+								<i class="fa-solid fa-image"></i>
+								<span>Upload image</span>
+							</div>
+							<div
+								class="opt-card"
+								onclick="showToast('Camera opening...')"
+							>
+								<i class="fa-solid fa-camera"></i>
+								<span>Click photo</span>
+							</div>
+							<div
+								class="opt-card active"
+								onclick="toggleWriteSection()"
+							>
+								<i class="fa-solid fa-pen"></i>
+								<span>Write your list</span>
+							</div>
+						</div>
+
+						<div id="writeSection" class="reveal-section">
+							<div class="step-tag">Step 1</div>
+							<textarea
+								id="listText"
+								placeholder="Example: 5kg Atta, 1L Oil..."
+							></textarea>
+							<button class="main-btn" onclick="processList()">
+								Find Products
+								<i class="fa-solid fa-chevron-right"></i>
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -218,7 +278,7 @@
 		</section>
 
 		<nav class="mobile-nav">
-			<a href="#" onclick="showToast('Home feature coming soon! ❤️')">
+			<a href="index.html">
 				<i class="fa fa-home"></i>
 				<span>Home</span>
 			</a>
@@ -226,7 +286,8 @@
 				href="#"
 				onclick="showToast('Categories feature coming soon! ❤️')"
 			>
-				<i class="fa fa-th-large"></i><span>Categories</span>
+				<i class="fa fa-th-large"></i>
+				<span>Categories</span>
 			</a>
 			<a
 				href="#"
@@ -235,11 +296,13 @@
 				<i class="fa-solid fa-bag-shopping"></i>
 				<span>My Orders</span>
 			</a>
-			<a href="#" onclick="showToast('Profile feature coming soon! ❤️')">
-				<i class="fa fa-user"></i><span>Profile</span>
+			<a href="profile.html">
+				<i class="fa fa-user"></i>
+				<span>Profile</span>
 			</a>
 			<a href="#" onclick="showToast('Menu feature coming soon! ❤️')">
-				<i class="fa fa-bars"></i><span>Menu</span>
+				<i class="fa fa-bars"></i>
+				<span>Menu</span>
 			</a>
 		</nav>
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

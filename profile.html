@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | Smart Basket</title>
+    <link rel="stylesheet" href="css/profile.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="profile-body">
+
+    <header class="page-header">
+        <button class="back-btn" onclick="window.history.back()">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <h2>My Account</h2>
+        <div class="header-right"><i class="fas fa-cog"></i></div> </header>
+
+    <main class="profile-container">
+        <div class="user-card">
+            <div class="user-avatar-large">DG</div>
+            <div class="user-details">
+                <h3>Divyanshu Gupta</h3>
+                <p>+91 8051725780</p>
+                <span class="membership-badge">Gold Member</span>
+            </div>
+            <button class="edit-profile-btn">Edit</button>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="count">12</span>
+                <span class="label">Orders</span>
+            </div>
+            <div class="stat-item">
+                <span class="count">₹450</span>
+                <span class="label">Wallet</span>
+            </div>
+            <div class="stat-item">
+                <span class="count">240</span>
+                <span class="label">Coins</span>
+            </div>
+        </div>
+
+        <div class="profile-menu">
+            <h4 class="menu-title">Account Settings</h4>
+            
+            <a href="#" class="menu-link">
+                <div class="menu-icon"><i class="fas fa-box"></i></div>
+                <div class="menu-text">
+                    <span>My Orders</span>
+                    <p>Track, return or buy things again</p>
+                </div>
+                <i class="fas fa-chevron-right arrow"></i>
+            </a>
+
+            <a href="#" class="menu-link">
+                <div class="menu-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="menu-text">
+                    <span>Saved Addresses</span>
+                    <p>Manage your home and office locations</p>
+                </div>
+                <i class="fas fa-chevron-right arrow"></i>
+            </a>
+
+            <a href="#" class="menu-link">
+                <div class="menu-icon"><i class="fas fa-credit-card"></i></div>
+                <div class="menu-text">
+                    <span>Payment Methods</span>
+                    <p>Saved cards, UPI and Wallets</p>
+                </div>
+                <i class="fas fa-chevron-right arrow"></i>
+            </a>
+
+            <h4 class="menu-title">Others</h4>
+
+            <a href="#" class="menu-link">
+                <div class="menu-icon"><i class="fas fa-bell"></i></div>
+                <div class="menu-text"><span>Notifications</span></div>
+                <i class="fas fa-chevron-right arrow"></i>
+            </a>
+
+            <a href="#" class="menu-link">
+                <div class="menu-icon"><i class="fas fa-headset"></i></div>
+                <div class="menu-text"><span>Help & Support</span></div>
+                <i class="fas fa-chevron-right arrow"></i>
+            </a>
+
+            <button class="logout-btn" onclick="handleLogout()">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </button>
+        </div>
+    </main>
+
+    <nav class="bottom-nav">
+        </nav>
+
+</body>
+</html>
